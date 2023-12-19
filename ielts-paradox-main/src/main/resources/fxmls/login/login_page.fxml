@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #1a2579;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="306.0" layoutY="108.0" prefHeight="535.0" prefWidth="888.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="306.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <AnchorPane layoutX="-2.0" prefHeight="596.0" prefWidth="599.0" style="-fx-background-color: #5160d7; -fx-background-radius: 10 0 0 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="429.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane layoutY="21.0" prefHeight="473.0" prefWidth="542.0" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
+                     <bottom>
+                        <ImageView fitHeight="472.0" fitWidth="501.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../images/register.png" />
+                           </image>
+                        </ImageView>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="596.0" layoutY="-50.0" prefHeight="485.0" prefWidth="431.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0 10 10 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="83.0" layoutY="31.0" text="LOGIN TO YOUR ACCOUNT" textFill="#1a2579">
+                     <font>
+                        <Font name="Dubai Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userEmail" layoutX="50.0" layoutY="116.0" prefHeight="41.0" prefWidth="331.0" promptText="Enter Your Email" />
+                  <PasswordField fx:id="userPassword" layoutX="50.0" layoutY="203.0" prefHeight="41.0" prefWidth="331.0" promptText="Enter Your Password" />
+                  <Label layoutX="53.0" layoutY="87.0" text="Your Email" textFill="#1a2579">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="173.0" text="Your Password" textFill="#1a2579">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="50.0" layoutY="336.0" mnemonicParsing="false" onAction="#loginPressed" prefHeight="41.0" prefWidth="331.0" style="-fx-background-color: #1a2579; -fx-background-radius: 10;" text="LOGIN" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Line endX="48.0" layoutX="152.0" layoutY="399.0" startX="-100.0" strokeWidth="0.5" />
+                  <Label layoutX="208.0" layoutY="390.0" text="OR" />
+                  <Line endX="48.0" layoutX="332.0" layoutY="399.0" startX="-100.0" strokeWidth="0.5" />
+                  <Label layoutX="263.0" layoutY="521.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="51.0" layoutY="268.0" prefHeight="44.0" prefWidth="331.0">
+                     <children>
+                        <Label text="Register As : " textFill="#1a2579">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="student" layoutX="1.0" layoutY="25.0" mnemonicParsing="false" onAction="#getUserType" selected="true" text="Student" textFill="#1a2579">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="userType" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="teacher" layoutX="181.0" layoutY="25.0" mnemonicParsing="false" onAction="#getUserType" text="Teacher" textFill="#1a2579" toggleGroup="$userType">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="36.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" text="Forgot Password?" textFill="#1a2579">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="222.0" layoutY="422.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #ffffff;" text="Create New Account!" textFill="#1a2579">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

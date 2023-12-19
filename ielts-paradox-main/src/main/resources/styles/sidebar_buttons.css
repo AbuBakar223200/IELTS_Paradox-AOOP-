@@ -1,0 +1,14 @@
+#buttons{
+    -fx-background-color: #1a2579;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.0) , 0, 0.0 , 0 , 0);
+    -fx-border-style: solid inside;
+    -fx-border-width: 0 0 0 0;
+
+}
+#buttons:hover{
+    -fx-background-color:#10195c;
+    -fx-border-style: solid inside;
+    -fx-border-width: 0 0 0 3;
+    -fx-border-color:white;
+}

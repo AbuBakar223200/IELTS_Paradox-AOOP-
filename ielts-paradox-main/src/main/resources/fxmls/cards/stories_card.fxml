@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="260.0" prefWidth="448.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.cardControllers.StoryCardController">
+   <children>
+      <AnchorPane fx:id="success_container" layoutX="2.0" layoutY="49.0" prefHeight="208.0" prefWidth="442.0" style="-fx-background-color: WHITE; -fx-background-radius: 20; -fx-effect: dropshadow( one-pass-box ,  #2e265c34 , 10, 0.0 , 2 , 5); -fx-border-color: #1a2579; -fx-border-radius: 20;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="71.0" prefHeight="69.0" prefWidth="422.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="mainStory" layoutX="23.0" prefHeight="59.0" prefWidth="392.0" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="149.0" prefHeight="60.0" prefWidth="440.0" style="-fx-background-color: #1a2579; -fx-background-radius: 0 0 20 20;">
+               <children>
+                  <Group layoutX="34.0" layoutY="8.0">
+                     <children>
+                        <Label fx:id="studentName" prefHeight="27.0" prefWidth="221.0" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1.0" layoutY="23.0" prefHeight="17.0" prefWidth="65.0" text="Band Score " textFill="WHITE" />
+                        <Label fx:id="bandScore" layoutX="66.0" layoutY="23.0" textFill="WHITE" />
+                     </children>
+                  </Group>
+                  <MFXButton layoutX="271.0" layoutY="12.0" onAction="#viewFullStory" prefHeight="34.0" prefWidth="161.0" style="-fx-background-radius: 20;" text="FULL STORY">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+               </children>
+            </AnchorPane>
+            <Label fx:id="id" layoutX="52.0" layoutY="24.0" visible="false" />
+            <Circle fx:id="circle" fill="WHITE" layoutX="220.0" layoutY="14.0" radius="53.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.5" />
+         </children>
+         <stylesheets>
+            <URL value="@../../styles/course_offering.css" />
+            <URL value="@../../styles/common_style.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

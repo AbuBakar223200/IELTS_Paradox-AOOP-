@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="934.0" style="-fx-background-color: #e9eff6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.student.MockTestController">
+    <children>
+        <GridPane hgap="20.0" layoutY="140.0" prefHeight="411.0" prefWidth="934.0" vgap="20.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="787.2000244140625" minWidth="10.0" prefWidth="456.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="609.0" minWidth="0.0" prefWidth="458.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="300.79998779296875" minHeight="10.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="291.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <AnchorPane prefHeight="195.0" prefWidth="553.0">
+                    <children>
+                        <Button alignment="TOP_LEFT" layoutY="-1.0" mnemonicParsing="false" onAction="#onClickListening" prefHeight="196.0" prefWidth="456.0" style="-fx-background-radius: 7; -fx-background-color: #a5b4fc; -fx-effect: dropshadow( one-pass-box,#2e265c34 , 5, 0.0 , 2 , 2);" text="Listening">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Text layoutX="324.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tap Card For Test" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="250.0" prefWidth="455.0" GridPane.columnIndex="1">
+                    <children>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onClickReading" prefHeight="195.0" prefWidth="458.0" style="-fx-background-radius: 7; -fx-background-color: #93c5fd; -fx-effect: dropshadow( one-pass-box,#2e265c34 , 5, 0.0 , 2 , 2);" text="Reading">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Text layoutX="339.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tap Card For Test" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="196.0" prefWidth="473.0" GridPane.rowIndex="1">
+                    <children>
+                        <Button alignment="TOP_LEFT" layoutX="-1.0" mnemonicParsing="false" onAction="#onClickWritting" prefHeight="195.0" prefWidth="458.0" style="-fx-background-radius: 7; -fx-background-color: #5eead4; -fx-effect: dropshadow( one-pass-box,#2e265c34 , 5, 0.0 , 2 , 2);" text="Writing">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Text layoutX="322.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tap Card For Test" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="256.0" prefWidth="498.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onClickSpeaking" prefHeight="195.0" prefWidth="458.0" style="-fx-background-radius: 7; -fx-background-color: #fca5a5; -fx-effect: dropshadow( one-pass-box,#2e265c34 , 5, 0.0 , 2 , 2);" text="Speaking">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Text layoutX="347.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tap Card For Test" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </GridPane>
+      <AnchorPane prefHeight="136.0" prefWidth="934.0" style="-fx-background-color: #e9eff6;">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="934.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow( one-pass-box,#2e265c34 , 10, 0.0 , 2 , 5);">
+               <image>
+                  <Image url="@../../../images/top_banner.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="22.0" layoutY="37.0" opacity="0.88" prefHeight="76.0" prefWidth="74.0" style="-fx-background-color: white; -fx-background-radius: 10 0 10 10; -fx-effect: dropshadow( one-pass-box,#2e265c34 , 10, 0.0 , 2 , 5);">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="11.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="96.0" layoutY="37.0" opacity="0.88" prefHeight="34.0" prefWidth="822.0" style="-fx-background-color: white; -fx-background-radius: 0 10 0 0;" />
+            <Label fx:id="pageTitle" layoutX="111.0" layoutY="74.0" prefHeight="46.0" prefWidth="622.0" style="-fx-text-fill: #1a2579;" text="Mock Test" textFill="#1a2579">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

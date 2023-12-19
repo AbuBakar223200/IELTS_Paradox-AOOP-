@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="269.0" style="-fx-background-color: #e9eff6; -fx-background-radius: 6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.cardControllers.LatestNoticeCardController">
+   <children>
+      <AnchorPane prefHeight="51.0" prefWidth="51.0" style="-fx-background-radius: 10;">
+         <children>
+            <FontAwesomeIconView fill="#1a2579" layoutX="10.0" layoutY="36.0" size="28" text="" wrappingWidth="24.571428298950195">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </FontAwesomeIconView>
+            <Label fx:id="_id" layoutX="5.0" layoutY="4.0" prefHeight="18.0" prefWidth="5.0" text=" " visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="51.0" prefWidth="218.0" style="-fx-background-radius: 10;">
+         <children>
+            <Label fx:id="title" layoutX="-1.0" layoutY="9.0" prefHeight="12.0" prefWidth="177.0" text="Spoken English">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="fullMessage" layoutX="-1.0" layoutY="26.0" prefHeight="15.0" prefWidth="158.0" text="Next monday you will have a mock test.....">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <MFXButton ellipsisString="" layoutX="172.0" layoutY="10.0" onAction="#seeDetails" prefHeight="33.0" prefWidth="35.0" style="-fx-background-color: white; -fx-background-radius: 6;" text=" " wrapText="true">
+               <graphic>
+                  <FontAwesomeIconView fill="#1a2579" size="18" text="" wrappingWidth="1.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

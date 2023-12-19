@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="blogs_container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="447.0" style="-fx-background-color: white; -fx-border-width: 1; -fx-background-radius: 15 15 0 0; -fx-border-radius: 13 13 0 0;" stylesheets="@../../styles/common_style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.cardControllers.BlogCardController">
+   <children>
+      <AnchorPane prefHeight="222.0" prefWidth="447.0" style="-fx-background-color: white; -fx-background-radius: 15 15 0 0; -fx-border-width: 0;">
+         <children>
+            <Rectangle fx:id="rectangle" arcHeight="26.0" arcWidth="26.0" fill="DODGERBLUE" height="222.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="445.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="219.0" prefWidth="447.0" style="-fx-background-color: white; -fx-border-color: ash;">
+         <children>
+            <Group layoutX="21.0" layoutY="6.0">
+               <children>
+                  <Label fx:id="publisher" layoutX="-2.0" layoutY="3.0" prefHeight="17.0" prefWidth="311.0" text="Rimon Morol" />
+                  <Label fx:id="date" layoutX="304.0" layoutY="3.0" text="23th June 2023" />
+               </children>
+            </Group>
+            <Label fx:id="title" layoutX="20.0" layoutY="32.0" prefHeight="27.0" prefWidth="403.0" text="How to score 9 in listening !">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="content" alignment="TOP_LEFT" layoutX="20.0" layoutY="67.0" prefHeight="100.0" prefWidth="403.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="details_button" layoutX="23.0" layoutY="178.0" mnemonicParsing="false" onAction="#viewFullBlog" prefHeight="27.0" prefWidth="403.0" stylesheets="@../../styles/course_offering.css" text="READ MORE ...">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="id" layoutX="398.0" layoutY="15.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

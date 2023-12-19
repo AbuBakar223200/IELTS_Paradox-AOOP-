@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #e9eff6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.CourseContentController">
+    <children>
+        <AnchorPane fx:id="topAnchor" prefHeight="111.0" prefWidth="1500.0" style="-fx-background-color: #ced8eb;">
+            <children>
+                <Label fx:id="title" layoutX="177.0" layoutY="33.0" prefHeight="38.0" prefWidth="808.0" text="IELTS Course Online">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label fx:id="instructor" layoutX="179.0" layoutY="65.0" prefHeight="20.0" prefWidth="703.0" text="LABIB MOROL, IELTS Instructor">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="31.0" layoutY="33.0" onAction="#backButtonHandler" prefHeight="40.0" prefWidth="40.0" rippleRadius="4.0" style="-fx-background-radius: 50;" text=" ">
+                    <graphic>
+                        <FontAwesomeIconView size="20" text="" wrappingWidth="12.14285659790039" />
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </MFXButton>
+            <Label fx:id="id" layoutX="781.0" layoutY="63.0" text="Label" visible="false" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="mainAnchor" layoutX="125.0" layoutY="125.0" prefHeight="564.0" prefWidth="1247.0">
+            <children>
+                <AnchorPane fx:id="webAnchor" prefHeight="500.0" prefWidth="808.0" style="-fx-background-color: white;">
+               <children>
+                  <WebView fx:id="courseVideo" layoutX="4.0" layoutY="3.0" prefHeight="494.0" prefWidth="801.0" />
+               </children></AnchorPane>
+                <AnchorPane fx:id="bottomAnchor" layoutY="500.0" prefHeight="64.0" prefWidth="808.0" style="-fx-background-color: #ced8eb; -fx-border-width: 1 0 0 0 0;">
+               <children>
+                  <MFXButton fx:id="nextButton" buttonType="RAISED" contentDisplay="RIGHT" depthLevel="LEVEL1" layoutX="684.0" layoutY="17.0" onAction="#next" prefHeight="30.0" prefWidth="99.0" rippleBackgroundOpacity="0.0" rippleRadiusMultiplier="0.0" text="NEXT ">
+                     <graphic>
+                        <FontAwesomeIconView text="" wrappingWidth="8.571428298950195" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXButton fx:id="prevButton" buttonType="RAISED" depthLevel="LEVEL1" layoutX="572.0" layoutY="17.0" onAction="#previous" prefHeight="30.0" prefWidth="99.0" text="  PREVIOUS">
+                     <graphic>
+                        <FontAwesomeIconView text="" wrappingWidth="5.571428298950195" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="25.0" layoutY="17.0" onAction="#fullScreen" prefHeight="30.0" prefWidth="121.0" text="   FULL SCREEN">
+                     <graphic>
+                        <FontAwesomeIconView text="" wrappingWidth="5.571428298950195" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+               </children></AnchorPane>
+                <AnchorPane fx:id="sideAnchor" layoutX="808.0" prefHeight="564.0" prefWidth="440.0" style="-fx-background-color: #e9eff6; -fx-border-width: 0 0 0 1;">
+                    <children>
+                        <Label fx:id="totalChapters" layoutX="21.0" layoutY="15.0" prefHeight="19.0" prefWidth="132.0" text="13 Chapters (3h 20m)" textFill="#878f91">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <MFXProgressBar fx:id="topProgress" layoutX="272.0" layoutY="20.0" prefHeight="8.0" prefWidth="113.0" progress="0.65" />
+                        <Label fx:id="mfxLevel" layoutX="392.0" layoutY="15.0" text="100%" textFill="#9a9797">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <MFXScrollPane hbarPolicy="NEVER" layoutX="6.0" layoutY="50.0" prefHeight="514.0" prefWidth="435.0" style="-fx-background-color: transparent;">
+                            <content>
+                                <VBox fx:id="contentSideBox" prefHeight="500.0" prefWidth="418.0" spacing="5.0" />
+                            </content>
+                        </MFXScrollPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+      <Label fx:id="point" layoutX="85.0" layoutY="229.0" text=" " visible="false" />
+    </children>
+</AnchorPane>

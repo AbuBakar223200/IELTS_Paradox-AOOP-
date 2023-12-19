@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #e9eff6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.AllControl.TeacherApprovedStudentsTableController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="95.0" prefWidth="1500.0" style="-fx-background-color: #ced8eb;">
+         <children>
+            <MFXButton buttonType="RAISED" layoutX="38.0" layoutY="29.0" onAction="#backButtonHandler" prefHeight="38.0" prefWidth="39.0" style="-fx-background-radius: 20;" text=" ">
+               <graphic>
+                  <FontAwesomeIconView size="20" text="" wrappingWidth="10.14285659790039" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="title" layoutX="311.0" layoutY="25.0" prefHeight="37.0" prefWidth="604.0" text="APPROVED STUDENTS FOR SPOKEN ENGLISH">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="points" layoutX="110.0" layoutY="261.0" text="Label" visible="false" />
+      <AnchorPane layoutX="290.0" layoutY="135.0" prefHeight="615.0" prefWidth="856.0" style="-fx-background-radius: 10; -fx-background-color: #e9eff6;">
+         <children>
+            <MFXScrollPane prefHeight="615.0" prefWidth="905.0" style="-fx-background-color: #e9eff6;" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="myCourseTable" prefHeight="3304.0" prefWidth="899.0" spacing="5.0" style="-fx-background-color: #e9eff6;" />
+               </content>
+            </MFXScrollPane>
+         </children>
+      </AnchorPane>
+      <Label contentDisplay="CENTER" layoutX="314.0" layoutY="97.0" prefHeight="27.0" prefWidth="124.0" text="Student Name" textFill="#a19999">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="533.0" layoutY="100.0" prefHeight="22.0" prefWidth="52.0" text="Email" textFill="#a19999">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="719.0" layoutY="100.0" prefHeight="22.0" prefWidth="147.0" text="Contact Number" textFill="#a19999">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="915.0" layoutY="100.0" prefHeight="22.0" prefWidth="113.0" text="Date" textFill="#a19999">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="points" layoutX="96.0" layoutY="224.0" text=" " visible="false" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

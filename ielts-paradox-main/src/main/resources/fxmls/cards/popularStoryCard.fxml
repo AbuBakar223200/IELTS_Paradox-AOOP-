@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="418.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.cardControllers.PopularStoryCardController">
+         <children>
+            <Label fx:id="studentName" layoutX="74.0" layoutY="6.0" prefHeight="20.0" prefWidth="283.0" text="How To Score 9 In Listening!">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="band" alignment="BOTTOM_LEFT" layoutX="74.0" layoutY="23.0" prefHeight="20.0" prefWidth="349.0" text="Band Score: 8.5" />
+            <MFXButton contentDisplay="RIGHT" layoutX="376.0" layoutY="7.0" onAction="#detailsHandler" prefHeight="36.0" prefWidth="21.0" style="-fx-border-radius: 10; -fx-background-color: white;" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#1a2579" size="30" text="" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MFXButton>
+            <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="38.0" prefWidth="34.0" style="-fx-background-color: #abc0ee; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="41.0" text="S" textFill="#3256a8">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+            <Label fx:id="id" layoutX="13.0" layoutY="11.0" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>

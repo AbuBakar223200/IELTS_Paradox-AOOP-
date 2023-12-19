@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="45.0" prefWidth="419.0" style="-fx-background-color: white; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.cardControllers.StudentRequestCardController">
+   <children>
+      <Label fx:id="studentMail" layoutX="214.0" layoutY="16.0" prefHeight="15.0" prefWidth="149.0" text="EKRAMUL HASAN MOROL" textFill="#3658a3">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="courseTitle" layoutX="52.0" layoutY="14.0" prefHeight="16.0" prefWidth="154.0" text="Spoken English" textFill="#3658a3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <MFXButton contentDisplay="CENTER" layoutX="380.0" layoutY="8.0" onAction="#goToCourseReqPage" prefHeight="30.0" prefWidth="29.0" style="-fx-background-color: #e1eefa;" text=" ">
+         <graphic>
+            <FontAwesomeIconView fill="#3658a3" size="20" text="" wrappingWidth="4.892857074737549" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <MFXButton contentDisplay="CENTER" layoutX="6.0" layoutY="7.0" prefHeight="32.0" prefWidth="35.0" style="-fx-background-color: #e1eefa; -fx-background-radius: 5;" text=" ">
+         <graphic>
+            <FontAwesomeIconView fill="#3658a3" size="14" text="" wrappingWidth="14.5" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <Label fx:id="courseId" layoutX="299.0" layoutY="10.0" text=" " visible="false">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

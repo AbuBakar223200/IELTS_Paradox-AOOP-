@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="922.0" prefWidth="736.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.CourseDetails.DescriptionController">
+
+    <children>
+        <Label fx:id="title" layoutX="5.0" layoutY="26.0" text="Live Course Online">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="description" alignment="TOP_LEFT" layoutX="5.0" layoutY="54.0" prefHeight="92.0" prefWidth="730.0" text="If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?If a dog chews shoes whose shoes does he choose?" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="7.0" layoutY="239.0" text="What you'll learn?">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+      <VBox fx:id="features" layoutX="8.0" layoutY="273.0" prefHeight="156.0" prefWidth="603.0" />
+        <Label layoutX="5.0" layoutY="451.0" text="Course Curriculum">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Accordion layoutX="3.0" layoutY="485.0" prefHeight="298.0" prefWidth="730.0">
+            <panes>
+                <TitledPane fx:id="courseTitle" animated="false" prefHeight="326.0" prefWidth="730.0" text="Course Title">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="728.0">
+                     <children>
+                        <VBox fx:id="curriculum" layoutX="22.0" layoutY="14.0" prefHeight="258.0" prefWidth="543.0" />
+                     </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+      <AnchorPane layoutX="10.0" layoutY="154.0" prefHeight="72.0" prefWidth="721.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="12.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+            <Group layoutX="370.0" layoutY="71.0" />
+            <Label fx:id="teacherName" alignment="BOTTOM_LEFT" layoutX="74.0" layoutY="4.0" prefHeight="36.0" prefWidth="349.0" text="Samiur Rahman Omlan">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="BASELINE_LEFT" layoutX="74.0" layoutY="29.0" prefHeight="36.0" prefWidth="230.0" text="Instructor at IELTS Paradox">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+
+
+</AnchorPane>

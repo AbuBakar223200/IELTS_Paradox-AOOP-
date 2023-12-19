@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="934.0" style="-fx-background-color: #e9eff6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ielts_paradox.controllers.student.OverviewController">
+   <children>
+      <VBox prefHeight="730.0" prefWidth="934.0" spacing="10.0">
+         <children>
+            <AnchorPane prefHeight="104.0" prefWidth="964.0">
+               <children>
+                  <Label fx:id="greetings" layoutX="1.0" layoutY="21.0" prefHeight="20.0" prefWidth="919.0" text="Hello Omlan, Welcome back" textFill="#a19a9a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="41.0" prefHeight="40.0" prefWidth="718.0" text="Your Dashboard Today" textFill="#1a2579">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="143.0" prefWidth="951.0" spacing="15.0">
+               <children>
+                  <AnchorPane prefHeight="131.0" prefWidth="755.0" style="-fx-background-color: #1a2579; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="32.0" layoutY="25.0" prefHeight="34.0" prefWidth="570.0" text="One course can fullfill your dream" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="32.0" layoutY="59.0" prefHeight="51.0" prefWidth="555.0" text="Are you ready to take your skills to the next level and achieve your dreams? Look no further! Our cutting-edge courses is designed to empower students." textFill="#e5e3e3d2" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttons" alignment="CENTER" layoutX="587.0" layoutY="25.0" mnemonicParsing="false" onAction="#onClickSeeCourse" prefHeight="82.0" prefWidth="137.0" stylesheets="@../../../styles/sidebar_buttons.css" text="See Course">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="131.0" prefWidth="163.0" style="-fx-background-color: #cdd1ef; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="23.0" layoutY="10.0" prefHeight="34.0" prefWidth="128.0" text="TOTAL COURSE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="courseCount" alignment="CENTER" layoutX="51.0" layoutY="33.0" prefHeight="86.0" prefWidth="71.0" text="9">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="498.0" prefWidth="964.0" spacing="15.0">
+               <children>
+                  <VBox prefHeight="498.0" prefWidth="515.0" spacing="5.0">
+                     <children>
+                        <AnchorPane prefHeight="237.0" prefWidth="499.0">
+                           <children>
+                              <Group layoutY="10.0" />
+                              <VBox fx:id="enrolledCourse" layoutX="1.0" layoutY="42.0" prefHeight="195.0" prefWidth="499.0" spacing="10.0" />
+                              <Button alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="415.0" layoutY="1.0" mnemonicParsing="false" onAction="#onClickEnrollCourse" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: transparent;" text="See All   ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView text="" />
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="1.0" layoutY="4.0" text="Enrolled Courses">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="237.0" prefWidth="499.0">
+                           <children>
+                              <Label layoutY="14.0" text="Popular Courses">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Button alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="421.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickPopularCourses" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: transparent;" text="See All   ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView text="" />
+                                 </graphic>
+                              </Button>
+                              <VBox fx:id="popularCourse" layoutX="1.0" layoutY="42.0" prefHeight="195.0" prefWidth="499.0" spacing="10.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="498.0" prefWidth="450.0" spacing="10.0">
+                     <children>
+                        <AnchorPane prefHeight="239.0" prefWidth="419.0">
+                           <children>
+                              <Group layoutX="2.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="Recent Blogs">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                              <Button alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="340.0" layoutY="3.0" mnemonicParsing="false" onAction="#onClickBlogs" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: transparent;" text="See All   ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView text="" />
+                                 </graphic>
+                              </Button>
+                              <VBox fx:id="popularBlog" layoutX="1.0" layoutY="41.0" prefHeight="195.0" prefWidth="418.0" spacing="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="239.0" prefWidth="419.0">
+                           <children>
+                              <Group layoutX="2.0" layoutY="2.0">
+                                 <children>
+                                    <Label layoutY="7.0" text="Recent Success Stories">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                              <Button alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="340.0" layoutY="5.0" mnemonicParsing="false" onAction="#onClickSuccessStories" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: transparent;" text="See All   ">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <FontAwesomeIconView text="" />
+                                 </graphic>
+                              </Button>
+                              <VBox fx:id="popularStory" layoutX="-1.0" layoutY="38.0" prefHeight="195.0" prefWidth="418.0" spacing="10.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
